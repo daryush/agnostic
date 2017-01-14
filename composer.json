@@ -1,0 +1,26 @@
+{
+    "description": "Framework Agnostic",
+    "name": "agnostic/agnostic",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "exclude-from-classmap": ["/features/", "/spec/"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Features\\": "features/bootstrap/Features/"
+        }
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "behat/behat": "^3.3",
+        "phpspec/phpspec": "^3.2"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "process-timeout": 900
+    }
+}
