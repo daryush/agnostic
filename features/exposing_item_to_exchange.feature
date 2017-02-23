@@ -7,5 +7,5 @@ Feature: Exposing item to exchange
     Given I am "example@user.com" user
     And I have item "bottle plug"
     When I expose "bottle plug" for exchanging
-    Then New exchange proposition with "bottle plug" should be opened
+    Then new exchange proposition with "bottle plug" should be opened
     And I should become "bottle plug" exchange proposition owner
