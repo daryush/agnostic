@@ -4,6 +4,8 @@ namespace Exchange\Model;
 
 class ExchangeProposition
 {
+    private $id;
+
     /**
      * @var Item
      */
@@ -17,5 +19,13 @@ class ExchangeProposition
     public function getItem()
     {
         return $this->item;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
     }
 }
