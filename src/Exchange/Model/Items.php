@@ -8,5 +8,5 @@ interface Items
 
     public function findAll();
 
-    public function findOneByNameAndMail($itemName, $ownerMail);
+    public function findOneByNameAndMail(string $itemName, string $ownerMail);
 }

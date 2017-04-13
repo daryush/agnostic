@@ -8,12 +8,12 @@ class ExposeItemToExchange
     /**
      * @var string
      */
-    private $itemName;
+    public $itemName;
 
     /**
      * @var string
      */
-    private $ownerEmail;
+    public $ownerEmail;
 
     public function __construct(string $itemName, string $ownerEmail)
     {
