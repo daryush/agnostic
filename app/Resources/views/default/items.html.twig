@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <ul>
+        {% for item in items %}
+            <li>{{ item.name }} owned by {{ item.ownerEmail }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

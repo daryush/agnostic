@@ -3,6 +3,8 @@ namespace Exchange\Model;
 
 class Item
 {
+    private $id;
+
     /**
      * @var string
      */
@@ -26,5 +28,13 @@ class Item
     public function getOwnerEmail(): string
     {
         return $this->userEmail;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 }

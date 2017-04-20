@@ -1,0 +1,12 @@
+services:
+    exchange.items_handler:
+      class: Exchange\Application\UserItemHandler
+      arguments: ["@exchange.items", "@exchange.exchange_propositions"]
+
+    exchange.items:
+      class: Exchange\Infrastructure\Doctrine\Items
+      arguments: ["@doctrine.orm.entity_manager"]
+
+    exchange.exchange_propositions:
+      class: Exchange\Infrastructure\Doctrine\ExchangePropositions
+      arguments: ["@doctrine.orm.entity_manager"]

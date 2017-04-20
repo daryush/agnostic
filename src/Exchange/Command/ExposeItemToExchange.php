@@ -6,12 +6,12 @@ class ExposeItemToExchange
     /**
      * @var string
      */
-    private $itemName;
+    public $itemName;
 
     /**
      * @var string
      */
-    private $userEmail;
+    public $userEmail;
 
     /**
      * @param string $itemName
